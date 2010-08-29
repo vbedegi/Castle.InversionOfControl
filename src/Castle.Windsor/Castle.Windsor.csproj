@@ -124,6 +124,7 @@
     <Compile Include="MicroKernel\ComponentActivator\IDependencyAwareActivator.cs" />
     <Compile Include="MicroKernel\Burden.cs" />
     <Compile Include="MicroKernel\Arguments.cs" />
+    <Compile Include="MicroKernel\ComponentActivator\LazyComponentActivator.cs" />
     <Compile Include="MicroKernel\Context\ComponentArgumentsEnumerator.cs" />
     <Compile Include="MicroKernel\Context\FallbackArgumentsStore.cs" />
     <Compile Include="MicroKernel\Context\NamedArgumentsStore.cs" />
@@ -354,6 +355,7 @@
     <Compile Include="MicroKernel\ModelBuilder\Inspectors\InterceptorInspector.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MicroKernel\ModelBuilder\Inspectors\LazyInspector.cs" />
     <Compile Include="MicroKernel\ModelBuilder\Inspectors\LifecycleModelInspector.cs">
       <SubType>Code</SubType>
     </Compile>

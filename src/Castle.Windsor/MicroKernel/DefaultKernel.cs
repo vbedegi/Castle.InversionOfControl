@@ -683,6 +683,12 @@ namespace Castle.MicroKernel
 				}
 			}
 
+			var useLazyComponentActivator = model.ExtendedProperties["lazyResolve"] is bool ? (bool)model.ExtendedProperties["lazyResolve"] : false;
+			if (useLazyComponentActivator)
+			{
+				activator = new LazyComponentActivator(model, activator);
+			}
+
 			return activator;
 		}
 

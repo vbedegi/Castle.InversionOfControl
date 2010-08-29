@@ -134,6 +134,7 @@
     <Compile Include="Facilities\TypedFactory\TypedFactoryAndSubContainersTestCase.cs" />
     <Compile Include="FailureCleanUpTestCase.cs" />
     <Compile Include="Interceptors\ThrowInCtorInterceptor.cs" />
+    <Compile Include="LazyComponentActivatorTestCase.cs" />
     <Compile Include="Lifestyle\Components\UsesComponentWithDispose.cs" />
     <Compile Include="RegistrationWithAttributeTestCase.cs" />
     <Compile Include="ClassComponents\A.cs" />

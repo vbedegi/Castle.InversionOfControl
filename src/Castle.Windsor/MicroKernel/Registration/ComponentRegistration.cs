@@ -760,6 +760,11 @@ namespace Castle.MicroKernel.Registration
 			return UsingFactoryMethod((k, m, c) => factoryMethod(k, c));
 		}
 
+		public ComponentRegistration<TService> Lazy()
+		{
+			return AddAttributeDescriptor("lazyResolve", true.ToString());
+		}
+
 		internal void AddParameter(IKernel kernel, ComponentModel model, String key, String value)
 		{
 			var parameters = EnsureParametersConfiguration(kernel);
